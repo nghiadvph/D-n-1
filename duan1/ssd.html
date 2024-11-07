@@ -1,0 +1,28 @@
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Số Lượng</title>
+</head>
+<body>
+    <input type="number" id="soluongInput" placeholder="Nhập số lượng">
+    <button onclick="sendData()">Gửi</button>
+    <div id="result"></div>
+
+    <script>
+        function sendData() {
+            var soluongInput = document.getElementById("soluongInput").value;
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "process.php", true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById("result").innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send("soluong=" + soluongInput);
+        }
+    </script>
+</body>
+</html>

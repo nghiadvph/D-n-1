@@ -1,0 +1,655 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.block{
+    margin: auto;
+}
+
+header img{
+    width: 100%;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    background-color:wheat;
+    border-radius: 5px;
+    margin-top:-4px;
+    display: flex;
+}
+nav .logo{
+    margin-left: 20%;
+    margin-top: -10px;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  nav .menu{
+    margin-top: -40px;
+  }
+  .menu .timkiem{
+    display: flex;
+    margin-top: -50px;
+    margin-left: 10px;
+  }
+  .timkiem .boxtimkiem{
+    padding: 5px 10px;
+    color: white;
+    font-size: 20px;
+    background-color: tomato;
+  }
+  .timkiem input{
+    padding: 5px 200px;
+    padding-left: 3px;
+    border: none;
+    background-color: #EEE;
+    border-radius: 3px 0px 0px 3px;
+  }
+  .timkiem input:focus{
+    border: none;
+    outline: none;
+  }
+nav ul{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+}
+nav ul li a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+}
+nav ul li a:hover{
+    font-size: 20px;
+}
+nav ul li:nth-child(7){
+    margin-left: 35%;
+}
+.tintuc img{
+    width: 300px;
+    margin-top: 10px;
+   }
+   .tintuc p{
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 20px;
+   }
+   .tintuc a{
+       margin-top: -20px;
+   }
+   .ct{
+       display: flex;
+   }
+   hr{
+    margin-top: 5px;
+    border: none;
+  border-top: 2px dotted #999;
+  margin: 20px 0
+   }
+   .ct a{
+       margin-top: 10px;
+       width:300px ;
+       margin-left: 20px;
+   }
+.boxconten{
+    min-width: 100%;
+    min-height: 250px;
+    background-color: #EEE;
+}
+main{
+    display: flex;
+    width: 75%;
+    margin-left: 15%;
+    margin-top: 30px;
+}
+/* .sticky + .sanpham{
+    padding-top: 102px;
+  } */
+  
+article{
+    width: 70%;
+}
+aside{
+    width: 30%;
+    margin-left: 15px;
+    
+}
+/* article .slideshow .anh{
+position: relative;
+} */
+article .slideshow img{
+    width: 100%;
+    height: 350px;
+}
+article .sanpham{
+    float: left;
+    width: 100%;
+}
+article .sanpham .boxsp{
+    float: left;
+    width: 32%;
+    min-height: 300px;
+    border-radius: 7px;
+    border: 1px solid #CCC;
+    margin-bottom: 20px;
+}
+.spchitiet{
+    margin-top: 20px;
+    text-align: center;
+}
+.spchitiet img{
+    width: 150px;
+    height: 150px;
+}
+.boxdssp{
+    width: 32%;
+    min-height: 300px;
+    border-radius: 7px;
+    border: 1px solid #CCC;
+    margin-bottom: 20px;
+}
+.boxsp img{
+    width: 150px;
+    height: 150px;
+    margin-left: 33px;
+    margin-top: 20px;
+}
+.boxsp p{
+    color: red;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.boxsp a{
+    text-decoration: none;
+}
+.boxsp a:hover{
+    color: blue;
+}
+.row{
+    width: 100%;
+    float: left;
+}
+.d{
+    width: 100%;
+    height: 40px;
+    /* border: 0px solid  rgb(198, 193, 193); */
+    background-color: rgb(226, 225, 225);
+    border: 1px solid  rgb(198, 193, 193);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.e{
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    /* border: 0px solid  rgb(198, 193, 193); */
+    background-color: rgb(227, 155, 155);
+    border: 1px solid  rgb(198, 193, 193);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius:5px 5px 0 0;
+}
+.f{
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    /* border: 0px solid  rgb(198, 193, 193); */
+    background-color: rgb(227, 155, 155);
+    border: 1px solid  rgb(198, 193, 193);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius:5px 5px 0 0;
+}
+.mr{
+    margin-right: 2%;
+}
+.td{
+    width: 100%;
+    height: 25px;
+    border: 1px solid  rgb(198, 193, 193);
+    padding: 5px 10px;
+}
+aside .form1{
+    width: 100%;
+    height: 250px;
+     border: 1px solid  rgb(198, 193, 193);
+     padding: 20px;
+}
+.form4{
+    width: 100%;
+    min-height: 250px;
+     border: 1px solid  rgb(198, 193, 193);
+     padding: 20px;
+}
+aside .form1 input[type="text"]{
+    width: 100%;
+    border: 1px solid  rgb(198, 193, 193);
+    height: 25px;
+}
+aside .form1 input[type="checkbox"]{
+     padding: 5px 10px;
+}
+aside .form1 input[type="password"]{
+    width: 100%;
+    border: 1px solid  rgb(198, 193, 193);
+    height: 25px;
+}
+aside .form1 input[type="submit"]{
+    padding: 5px 10px;
+    border: 1px solid  rgb(198, 193, 193);
+}
+aside .form1 input[type="submit"]:hover{
+    background-color: beige;
+}
+.form1 li{
+    color: blue;
+}
+.form1 input[type="text"],
+.form1 input[type="password"],
+.form1 input[type="email"]{
+    width: 90%;
+    border: 1px solid  rgb(198, 193, 193);
+    height: 30px;
+}
+.form1 input[type="submit"],
+.form1 input[type="reset"]{
+    padding: 5px 10px;
+    border: 1px solid  rgb(198, 193, 193);
+}
+aside .form1 a{
+    text-decoration: none;
+    color: blue;
+}
+aside .form1 a:hover{
+    color: red;
+    text-decoration: underline;
+}
+aside .a{
+    width: 100%;
+    height: 40px;
+    /* border: 0px solid  rgb(198, 193, 193); */
+    background-color: rgb(226, 225, 225);
+    border: 1px solid  rgb(198, 193, 193);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+aside .b{
+    width: 100%;
+    height: 40px;
+    /* border: 0px solid  rgb(198, 193, 193); */
+    background-color: rgb(226, 225, 225);
+    border: 1px solid  rgb(198, 193, 193);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+aside .c{
+    width: 100%;
+    height: 40px;
+    /* border: 0px solid  rgb(198, 193, 193); */
+    background-color: rgb(226, 225, 225);
+    border: 1px solid  rgb(198, 193, 193);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+.mb{
+    margin-bottom: 10px;
+}
+.menudoc ul{
+  list-style: none;
+}
+.addtocart{
+    margin-left: 30px;
+    margin-top: 20px;
+    padding: 5px 20px;
+}
+.addtocart:hover{
+    background-color: wheat;
+    color: white;
+}
+.menudoc li{
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid rgb(168, 164, 164);
+}
+.menudoc ul a{
+    text-decoration: none;
+    color: #666;
+}
+.menudoc li:hover{
+    background-color: #CCC;
+}
+.dang table td{
+    padding: 10px 50px;
+    border: 1px solid rgb(125, 125, 124);
+}
+.xoa{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 0.2px solid #CCC;
+
+}
+.xoa:hover{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: wheat;
+    font-size: 10px;
+    border: 0.2px solid #CCC;
+}
+main article .row .danh table{
+    width: 100%;
+    border-collapse:collapse ;
+}
+.danh table th{
+    width: 100%;
+    background-color: rgb(205, 244, 205);
+    height: 40px;
+}
+.danh table td{
+    padding: 10px 30px;
+    border: 1px solid  rgb(198, 193, 193);
+}
+.danh table th:nth-child(1){
+    width: 15%;
+    background-color: rgb(205, 244, 205);
+}
+.danh table th:nth-child(2){
+    width: 15%;
+    background-color: rgb(205, 244, 205);
+}
+.danh table th:nth-child(3){
+    width: 15%;
+    background-color: rgb(205, 244, 205);
+}
+.danh table th:nth-child(4){
+    width: 15%;
+    background-color: rgb(205, 244, 205);
+}
+.danh table th:nth-child(5){
+    width: 15%;
+    background-color: rgb(205, 244, 205);
+}
+.dathang{
+    width: 100%;
+    min-height: 200px;
+    border: 1px solid  rgb(198, 193, 193);
+    border-radius: 0 0 5px 5px;
+}
+.thanhtoan{
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid  rgb(198, 193, 193);
+    border-radius: 0 0 5px 5px;
+}
+.giohang{
+    width: 100%;
+    min-height: 200px;
+    background-color: #EEE;
+    border: 1px solid  rgb(198, 193, 193);
+    border-radius: 0 0 5px 5px;
+}
+.gioh table{
+    width: 80%;
+    margin-left:7%;
+    margin-top: 20px;
+    border-collapse:collapse ;
+}
+.gioh table th{
+    width: 80%;
+    background-color: #CCC;
+    height: 40px;
+}
+.gioh table td{
+    padding: 10px 30px;
+    border: 1px solid  rgb(198, 193, 193);
+}
+.dathang table{
+    padding: 20px 40px;
+}
+.bill table td{
+    margin-left: 100px;
+}
+.dathang table td{
+    padding: 3px;
+}
+.dathang table td input{
+    width: 400px;
+    margin-left: 80px;
+    padding: 5px 0;
+    border-radius: 5px;
+    border: 1px solid  rgb(198, 193, 193);
+}
+aside .form2{
+    width: 100%;
+    min-height: 200px;
+    border: 1px solid  rgb(198, 193, 193);
+    background-color: #f6f4f4;
+}
+.ml{
+    margin-left: 20px;
+}
+.mt{
+    margin-top: 10px;
+}
+.md .row img{
+    width: 150px;
+    height: 150px;
+}
+.toan{
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.dongy input{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid  rgb(198, 193, 193);
+}
+.dongy input:hover{
+    background-color: #bbb;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid  rgb(198, 193, 193);
+}
+aside .box{
+    width: 100%;
+    height: 50px;
+    margin-top: -2px;
+    background-color: #f6f4f4;
+    border: 1px solid  rgb(198, 193, 193);
+    padding: 10px 20px;
+}
+.seach input[type="text"]{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+}
+aside .form3{
+    width: 100%;
+    min-height: 250px;
+    padding: 20px;
+    border: 1px solid  rgb(198, 193, 193);
+}
+.top10 img{
+    width: 30px;
+    float: left;
+    margin-right: 5px;
+    border: 1px solid #666;
+    border-radius: 5px;
+}
+.top10 a{
+    color: #666;
+    text-decoration: none;
+}
+.top10 a:hover{
+    color: blue;
+}
+footer{
+    margin-top: 5px;
+    width: 100%;
+    height: 490px;
+   background-color:black;
+   display: flex;
+}
+footer .chu{
+    margin-left: 0px;
+}
+footer .chu img{
+    width:200px;
+    filter: brightness(100);
+    transition: filter 0.5s;
+    height: 110px;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+footer .chu p{
+    color: white;
+    width: 200px;
+    font-size: 15px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+footer .ban{
+    color: white;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+footer .ban h3{
+    font-size: 15px;
+}
+footer .ban p{
+    margin-top: 10px;
+}
+footer .ban input{
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px 0px 0px 5px;
+}
+footer .ban .loi{
+    color: red;
+}
+footer .ban button{
+    width: 50px;
+   border-radius: 0px 5px 5px 0px;
+    height: 40px;
+    color: white;
+    background-color: rgb(60, 157, 236);
+}
+footer .ban span{
+    color: white;
+}
+.dichvu{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+footer .cuoi{
+    margin-top: 20px;
+}
+/* footer .p2{
+    margin-left: 40px;
+} */
+footer .p3{
+    margin-left: 30px;
+}
+footer .p4{
+    margin-left: 30px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+  }
+  /* Slides */  
+  .mySlides {
+    display: none;
+    padding: 50px;
+    text-align: center;
+  }
+  .numbertext{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    margin-top: -20px;
+  }
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: red;
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;}
+  
+  /* Add a blue color to the author */
+  .author {color: cornflowerblue;}

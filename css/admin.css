@@ -1,0 +1,341 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.block{
+    margin: auto;
+}
+header img{
+    width: 100%;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    background-color:wheat;
+    border-radius: 5px;
+    margin-top:-4px;
+    display: flex;
+}
+nav .logo{
+    margin-left: 15%;
+    margin-top: -10px;
+}
+main{
+    margin: auto;
+    width: 70%;
+    min-height: 400px;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  nav .menu{
+    margin-top: -40px;
+  }
+  .menu .timkiem{
+    display: flex;
+    margin-top: -50px;
+    margin-left: 10px;
+  }
+  .timkiem .boxtimkiem{
+    padding: 5px 10px;
+    color: white;
+    font-size: 20px;
+    background-color: tomato;
+  }
+  .timkiem input{
+    padding: 5px 200px;
+    padding-left: 3px;
+    border: none;
+    background-color: #EEE;
+    border-radius: 3px 0px 0px 3px;
+  }
+  .timkiem input:focus{
+    border: none;
+    outline: none;
+  }
+nav ul{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+}
+nav ul li a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+}
+nav ul li a:hover{
+    color: violet;
+}
+.icon{
+    margin-top: 33px;
+    margin-left: 30px;
+}
+.row{
+    width: 100%;
+    float: left;
+}
+.title{
+    width: 117%;
+    height: 50px;
+    background-color: rgb(205, 244, 205);
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.titel{
+    width: 100%;
+    height: 50px;
+    background-color: wheat;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.titelse{
+    width: 100%;
+    height: 50px;
+    background-color: wheat;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    border-bottom: none;
+}
+.titels{
+    width: 105%;
+    height: 50px;
+    background-color: wheat;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.back{
+    font-size: 25px;
+    color: violet;
+}
+.titel h2{
+    font-size: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.titelse h2{
+    font-size: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.titels h2{
+    font-size: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.title h2{
+    font-size: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.md20{
+    margin-bottom: 10px;
+}
+.donhang{
+    margin-left: -40px;
+}
+.conten{
+    padding: 20px 0px;
+}
+.conten input[type="text"]{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+}
+.conten input[type="submit"],
+.conten input[type="reset"],
+.conten input[type="button"]{
+    padding: 5px 10px;
+    border: 1px solid  rgb(198, 193, 193);
+}
+.conten input[type="submit"]:hover,
+.conten input[type="reset"]:hover,
+.conten input[type="button"]:hover{
+    background-color: rgb(243, 243, 7);
+}
+.danh table{
+    width: 100%;
+    border-collapse:collapse ;
+}
+.dang table{
+    width: 100%;
+    border-collapse:collapse ;
+}
+.dang table th{
+    width: 100%;
+    background-color: rgb(205, 244, 205);
+    height: 40px;
+}
+.dang table th{
+    width: 100%;
+    background-color: rgb(205, 244, 205);
+}
+.danh table th{
+    width: 100%;
+    background-color: rgb(205, 244, 205);
+    border: 0.5px solid black;
+    height: 40px;
+}
+.danh table th:nth-child(1){
+    width: 10%;
+    background-color: rgb(205, 244, 205);
+}
+.dang table th:nth-child(1){
+    width: 5%;
+    background-color: rgb(205, 244, 205);
+}
+.dang table th:nth-child(2){
+    width: 10%;
+    background-color: rgb(205, 244, 205);
+}
+.danh table th:nth-child(2){
+    width: 15%;
+    background-color: rgb(205, 244, 205);
+}
+.danh table th:nth-child(3){
+    width: 15%;
+    background-color: rgb(205, 244, 205);
+}
+.dang table th:nth-child(3){
+    width: 20%;
+    background-color: rgb(205, 244, 205);
+}
+.danh table th:nth-child(4){
+    width: 20%;
+    background-color: rgb(205, 244, 205);
+}
+.dang table th:nth-child(4){
+    width: 15%;
+    background-color: rgb(205, 244, 205);
+}
+.danh table th:nth-child(5){
+    width: 10%;
+    background-color: rgb(205, 244, 205);
+}
+.dang table th:nth-child(5){
+    width: 20%;
+    background-color: rgb(205, 244, 205);
+}
+.danh table th:nth-child(6){
+    width: 10%;
+    background-color: rgb(205, 244, 205);
+}
+.dang table th:nth-child(6){
+    width: 10%;
+    background-color: rgb(205, 244, 205);
+}
+.danh table th:nth-child(7){
+    width: 25%;
+    background-color: rgb(205, 244, 205);
+}
+.dang table th:nth-child(7){
+    width: 20%;
+    background-color: rgb(205, 244, 205);
+}
+.dang table th:nth-child(8){
+    width: 10%;
+    background-color: rgb(205, 244, 205);
+}
+.danh table td{
+    padding: 10px 40px;
+    text-align: center;
+    border: 1px solid rgb(125, 125, 124);
+}
+.dang table td{
+    padding: 10px 20px;
+    border: 1px solid rgb(125, 125, 124);
+}
+
+footer{
+    margin-top: 20px;
+    width: 100%;
+    height: 490px;
+   background-color:black;
+   display: flex;
+}
+footer .chu{
+    margin-left: 8%;
+}
+footer .chu img{
+    width:200px;
+    filter: brightness(100);
+    transition: filter 0.5s;
+    height: 110px;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+footer .chu p{
+    color: white;
+    width: 200px;
+    font-size: 15px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+footer .ban{
+    color: white;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+footer .ban h3{
+    font-size: 15px;
+}
+footer .ban p{
+    margin-top: 10px;
+}
+footer .ban input{
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px 0px 0px 5px;
+}
+footer .ban .loi{
+    color: red;
+}
+footer .ban button{
+    width: 50px;
+   border-radius: 0px 5px 5px 0px;
+    height: 40px;
+    color: white;
+    background-color: rgb(60, 157, 236);
+}
+footer .ban span{
+    color: white;
+}
+.dichvu{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+footer .cuoi{
+    margin-top: 20px;
+}
+/* footer .p2{
+    margin-left: 40px;
+} */
+footer .p3{
+    margin-left: 30px;
+}
+footer .p4{
+    margin-left: 30px;
+}
+.p4 img{
+    width: 300px;
+    margin-top: 5px;
+}

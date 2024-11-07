@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dự án mẫu</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section class="block">
+      <header>
+        <img src="https://lzd-img-global.slatic.net/us/domino/e3242ccf-1386-4b2a-822a-41be1c8cf28d_VN-1188-80.png_2200x2200q80.png_.webp" alt="BAU" class="image" data-once="true" style="object-fit: contain;" data-spm-anchor-id="a2o4n.home-vn.0.i0.19053bdcedkrEY"> 
+      </header>
+        <nav id="nav">
+              <section class="logo">
+                <a href="index.html"><img src="logo-banh-ngot-removebg-preview.png" width="120px"></a>
+              </section>
+              <section class="menu">
+                <ul>
+                  <li><a href="index.html">Trang chủ</a></li>
+                  <li><a href="">Giới thiệu</a></li>
+                  <li><a href="sanpham.html">Sản phẩm</a></li>
+                  <li><a href="">Tin tức</a></li>
+                  <li><a href="">Liên hệ</a></li>
+                  <li><a style="color:black;font-size: 25px;"><i class='bx bx-cart'></i></a></li>
+              </ul>
+              <section class="timkiem">
+                <input type="text" name="timkiem" placeholder="Tìm kiếm...">
+              <section class="boxtimkiem"><i class='bx bx-search-alt-2'></i></section>
+              </section>
+              </section>
+            <script>
+               window.onscroll = function() {myFunction()};
+
+              var header = document.getElementById("nav");
+              var sticky = header.offsetTop;
+
+              function myFunction() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+            </script>
+        </nav>
+        <main class="main">
+            <article class="tt">
+              <section class="mh">
+                <p>Thông tin mua hàng</p>
+                <p>
+                  Bạn đã có tài khoản?
+                  <a
+                      href="">Đăng
+                      nhập</a>
+              </p>
+              </section>
+              <section class="row indexmuahang">
+                <table>
+                  <tr>
+                      <td><input type="text" name="name" required placeholder="Họ tên"></td>
+                  </tr>
+                  <tr>
+                     
+                      <td><input type="text" name="address" required placeholder="Địa chỉ"></td>
+                  </tr>
+                  <tr>
+                     
+                      <td><input type="text" name="sodienthoai" required placeholder="Số điện thoại"></td>
+                  </tr>
+                  <tr>
+        
+                      <td><input type="text" name="email" placeholder="Email"></td>
+                  </tr>
+                  <tr>
+                    <td><input type="radio" value="1" name="pttt" checked>Thanh toán khi nhận hàng
+                        <input type="radio" value="2" name="pttt" >Thanh toán chuyển khoản
+                        <input type="radio" value="3" name="pttt" >Thanh toán Online</td>
+                  </tr>
+                  <tr>
+                    <td><button type="submit">Đặt hàng</button></td>
+                  </tr>
+                </table>
+                  <section>
+            </article>
+            <aside class="hh">
+              <section class="ss">
+             <section class="cmm mm">
+               <section class="cmmm">
+                <img alt="BÁNH KEM HOA"
+                src="//product.hstatic.net/1000398438/product/post_19-05_dd9099e6512a48c2bd0b5bbab98bfda7_small.png">
+                 <p>Bánh kem ngon</p>
+               </section>
+               <section class="cmmmm">
+                <p>300.000đ</p>
+               </section>
+             </section>
+             <section class="cmm mm">
+              <section class="cmmm">
+               <img alt="BÁNH KEM HOA"
+               src="//product.hstatic.net/1000398438/product/post_19-05_dd9099e6512a48c2bd0b5bbab98bfda7_small.png">
+                <p>Bánh kem ngon</p>
+              </section>
+              <section class="cmmmm">
+               <p>300.000đ</p>
+              </section>
+            </section>
+            </section>
+              <hr>
+              <section class="cmmmmm">
+                <p>Tạm tính</p>
+                <p>300.000đ</p>
+              </section>
+              <section class="cmmmmmm">
+                <p>Tổng cộng</p>
+                <p>300.000đ</p>
+              </section>
+              <section class="luong">
+                Số lượng: <input type="number" class="mr" id="soluong" value="1" min="1">
+                Thành tiền: <p id="thanhtien">'.$pricekhuyenmai.'đ</p>;
+                <script>
+                     $tong=0;
+                     var soluong= document.getElementById("soluong");
+                     var giatien= document.getElementById("giatien");
+                     var thanhtien= document.getElementById("thanhtien");
+                     soluong.addEventListener("input", calculateTotal);
+                       function calculateTotal() {
+                   const quantity = parseInt(soluong.value);
+                   const price = parseInt('.$pricekhuyenmai.');
+                   
+                   const total = quantity * price;
+                   
+                   thanhtien.textContent = `${total}đ`;
+                     }
+                     soluong.addEventListener("input", restrictNegativeNumber);
+                     function restrictNegativeNumber() {
+                       if (soluong.value < 0) {
+                           soluong.value = Math.abs(soluong.value); // Chuyển giá trị âm thành dương
+                       }
+                   }
+                   </script>
+               </section>
+            </aside>
+        </main>
+        <footer>
+          <section class="chu">
+            <a><img src="logo-banh-ngot-removebg-preview.png" width="120px"></a>
+        <p>Tại cửa hàng chúng tôi, chúng tôi tự hào cung cấp những chiếc bánh kem tinh tế, được làm từ những nguyên liệu tươi ngon nhất và được trau chuốt bởi đôi bàn tay tài năng của các đầu bếp chuyên nghiệp. Với sự sáng tạo và tinh tế, chúng tôi không chỉ mang đến cho khách hàng những chiếc bánh kem ngon miệng mà còn tạo ra những trải nghiệm độc đáo và đáng nhớ.</p>
+        </section>
+        <section class="ban">
+          <h3>Đăng kí để nhận bản tin</h3>
+          <p>Nhận bản tin để không bỏ lỡ thông tin và khuyến mãi của </p>
+              <input type="email" id="email" onblur="gui()" required>
+              <button onclick="gui()">Gửi</button><br>
+              <span class="loi" id="loi"></span>
+              <script>
+                var mail=document.getElementById("email");
+                function gui(){
+                    if(mail.value==""){
+                        document.getElementById("loi").innerHTML="Vui lòng nhập email";
+                    }else{
+                        document.getElementById("loi").innerHTML="";
+                        
+                    }
+                }
+              </script>
+          <section class="dichvu">
+          <section class="p1">
+              <h2>LEADING ONLINE </h2>
+              <p>Trở thành cộng tác viên</p>
+              <p>Báo giá cửa hàng</p>
+          </section>
+          <section class="p2">
+              <h2>Hỗ trợ</h2>
+              <p>Câu hỏi thường gặp</p>
+              <p>Liên hệ</p>
+          </section>
+          <section class="p3">
+              <h2>TOP CATEGORIES & BRANDS</h2>
+              <p>Tin tức</p>
+              <p>Chính sách bảo mật</p>
+              <p>Điều khoản sử dụng</p>
+              <p>Cơ hội việc làm</p>
+          </section>
+          <section class="p4">
+              <h2>Công ty thành viên</h2>
+              <p>Banhngot-Trang đăng tin</p>
+              <p>bán bánh ngọt uy tín tại Việt Nam</p>
+          </section>
+           </section>
+           <section class="cuoi">
+              <p>Bánh ngọt hot.Hotline: 0368799822</p>
+              <p>Địa chỉ: Tòa P, Trường cao đẳng FPT Polytechnic, Nam Từ Liêm,Hà Nội</p>
+           </section>
+        </section>
+      </footer>
+    </section>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
